@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react';
-import type {LogMetadata, UserLog} from "../../../types";
 import { getPostTitle } from '../../../services/metadataService.ts';
+import type {UserLog} from "../../../types/userLog.ts";
+import type {LogMetadata} from "../../../types/logMetadata.ts";
 
 interface LogRowMetadataProps {
     metadata: LogMetadata;

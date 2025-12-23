@@ -1,11 +1,11 @@
 import {useState} from "react";
-import type {UserLog} from "../../types";
 import UserAction from "./rows/UserAction.tsx";
 import UserId from "./rows/UserId.tsx";
 import UserIp from "./rows/UserIp.tsx";
 import LogTimestamp from "./rows/LogTimestamp.tsx";
 import LogDetailsButton from "./rows/LogDetailsButton.tsx";
 import LogRowMetadata from "./rows/LogRowMetadata.tsx";
+import type {UserLog} from "../../types/userLog.ts";
 
 interface LogRowProps {
     log: UserLog;

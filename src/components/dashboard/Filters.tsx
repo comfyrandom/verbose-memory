@@ -1,9 +1,9 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDownload, faSearch, faSync} from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
-import type {LogFilters} from "../../types";
 import {supabase} from "../../libs/supabase.ts";
 import {useEffect, useState} from "react";
+import type {LogFilters} from "../../types/logFilters.ts";
 
 interface FiltersProps {
     fetchLogs: () => Promise<void>;

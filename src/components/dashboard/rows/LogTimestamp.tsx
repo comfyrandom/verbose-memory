@@ -1,4 +1,4 @@
-import type {UserLog} from "../../../types";
+import type {UserLog} from "../../../types/userLog.ts";
 
 interface LogTimestampProps {
     log: UserLog

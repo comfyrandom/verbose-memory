@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import "react-datepicker/dist/react-datepicker.css";
 import {supabase} from "../libs/supabase.ts";
-import type {LogFilters, UserLog} from "../types";
 import Stats from "../components/dashboard/Stats.tsx";
 import Filters from "../components/dashboard/Filters.tsx";
 import LogRow from "../components/dashboard/LogRow.tsx";
+import type {UserLog} from "../types/userLog.ts";
+import type {LogFilters} from "../types/logFilters.ts";
 
 const ITEMS_PER_PAGE = 25;
 

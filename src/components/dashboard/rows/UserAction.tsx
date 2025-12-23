@@ -1,4 +1,3 @@
-import type {LogMetadata, UserLog} from "../../../types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faNewspaper,
@@ -11,6 +10,8 @@ import {
     faBirthdayCake,
     faHome
 } from "@fortawesome/free-solid-svg-icons";
+import type {UserLog} from "../../../types/userLog.ts";
+import type {LogMetadata} from "../../../types/logMetadata.ts";
 
 interface UserActionProps {
     log: UserLog;

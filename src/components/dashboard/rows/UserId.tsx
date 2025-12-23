@@ -1,6 +1,6 @@
-import type {UserLog} from "../../../types";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
+import type {UserLog} from "../../../types/userLog.ts";
 
 interface UserIdProps {
     log: UserLog

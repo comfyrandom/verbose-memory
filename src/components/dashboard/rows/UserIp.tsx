@@ -1,6 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGlobe} from "@fortawesome/free-solid-svg-icons";
-import type {UserLog} from "../../../types";
+
+import type {UserLog} from "../../../types/userLog.ts";
 
 interface UserIpProps {
     log: UserLog;
