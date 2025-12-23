@@ -188,11 +188,6 @@ const Dashboard: React.FC = () => {
     return (
         <div className="min-h-screen bg-gray-900 text-gray-100 p-4 md:p-6">
 
-            <div className="mb-6">
-                <h1 className="text-2xl font-bold text-white mb-1">Debug Logs Dashboard</h1>
-                <p className="text-gray-400 text-sm">Monitor and analyze user activity logs</p>
-            </div>
-
             <Stats />
             <Filters fetchLogs={() => fetchLogs(currentPage)} exportLogs={exportLogs} filters={filters} setFilters={setFilters} />
 
@@ -276,13 +271,6 @@ const Dashboard: React.FC = () => {
                         </div>
                     </div>
                 )}
-            </div>
-
-            <div className="mt-6 text-center text-gray-500 text-xs">
-                <p>Debug Logs Dashboard • Last updated: {new Date().toLocaleTimeString()}</p>
-                <p className="mt-1">
-                    Showing {((currentPage - 1) * ITEMS_PER_PAGE) + 1} to {Math.min(currentPage * ITEMS_PER_PAGE, totalCount)} of {totalCount} logs
-                </p>
             </div>
         </div>
     );
